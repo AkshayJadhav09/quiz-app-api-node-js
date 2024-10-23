@@ -1,0 +1,11 @@
+version: '3'
+services:
+  quiz-app:
+    build: .
+    ports:
+      - '3000:3000'
+    command: npm run start
+    volumes:
+      - .:/app
+    stdin_open: true
+    tty: true
